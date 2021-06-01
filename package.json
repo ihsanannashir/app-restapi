@@ -1,0 +1,23 @@
+{
+  "name": "app-restapi",
+  "version": "1.0.0",
+  "description": "NodeJS REST API App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihsanannashir/app-restapi.git"
+  },
+  "keywords": [
+    "nodejs",
+    "rest-api"
+  ],
+  "author": "Ihsan An-Nashir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ihsanannashir/app-restapi/issues"
+  },
+  "homepage": "https://github.com/ihsanannashir/app-restapi#readme"
+}
