@@ -69,3 +69,18 @@ exports.updateMahasiswa = function (req, res) {
         }
     );
 }
+
+//[DELETE] delete data by id
+exports.deleteMahasiswa = function (req, res) {
+    var id = req.body.id_mahasiswa;
+    
+    connection.query('DELETE from mahasiswa WHERE id_mahasiswa=?', [id],
+        function(error, rows, fields) {
+            if (error) {
+                console.log(error);
+            } else {
+                response.ok("Data has been deleted!", res);
+            }
+        }
+    );
+}
