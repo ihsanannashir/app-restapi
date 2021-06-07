@@ -12,12 +12,15 @@ module.exports = function(app) {
     app.route('/mahasiswa/:id')
         .get(jsonku.showsDataMahasiswaById);
 
-    app.route('/addMahasiswa')
+    app.route('/mahasiswa/tambah')
         .post(jsonku.addMahasiswa);
 
-    app.route('/updateMahasiswa')
+    app.route('/mahasiswa/update')
         .put(jsonku.updateMahasiswa);
 
-    app.route('/deleteMahasiswa')
+    app.route('/mahasiswa/delete')
         .delete(jsonku.deleteMahasiswa);
+
+    app.route('/matakuliah')
+        .get(jsonku.showsGroupMatakuliah);
 }
